@@ -5,14 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "prettier": "prettier --write .",
+    "prettier:check": "prettier --check ."
   },
   "keywords": [],
   "author": "Zachary Meyer",
   "license": "MIT",
+  "prettier": "@solare/prettier-config",
   "devDependencies": {
+    "@solare/prettier-config": "^0.0.1",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
+    "prettier": "^2.7.1",
     "sass": "^1.52.3"
   }
 }

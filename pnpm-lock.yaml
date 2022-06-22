@@ -1,16 +1,24 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@solare/prettier-config': ^0.0.1
   gulp: ^4.0.2
   gulp-sass: ^5.1.0
+  prettier: ^2.7.1
   sass: ^1.52.3
 
 devDependencies:
+  '@solare/prettier-config': 0.0.1
   gulp: 4.0.2
   gulp-sass: 5.1.0
+  prettier: 2.7.1
   sass: 1.52.3
 
 packages:
+
+  /@solare/prettier-config/0.0.1:
+    resolution: {integrity: sha512-HIzPbkvJJo9d9aI9iKcjDiUyV+ntd0tz3RIxAy+xhiz9cCoHJl6HCt6mCILIUqZoHkts7rKxPX7fKCy5wavbQA==}
+    dev: true
 
   /ansi-colors/1.1.0:
     resolution: {integrity: sha512-SFKX67auSNoVR38N3L+nvsPjOE0bybKTYbkf5tRvushrAPQ9V75huw0ZxBkKVeRU9kqH3d6HA4xTckbwZ4ixmA==}
@@ -1654,6 +1662,12 @@ packages:
   /posix-character-classes/0.1.1:
     resolution: {integrity: sha512-xTgYBc3fuo7Yt7JbiuFxSYGToMoz8fLoE6TC9Wx1P/u+LfeThMOAqmuyECnlBaaJb+u1m9hHiXUEtwW4OzfUJg==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /prettier/2.7.1:
+    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
     dev: true
 
   /pretty-hrtime/1.0.3:
