@@ -14,7 +14,7 @@
   "license": "MIT",
   "prettier": "@solare/prettier-config",
   "devDependencies": {
-    "@solare/prettier-config": "^0.0.1",
+    "@solare/prettier-config": "0.0.2",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "prettier": "^2.7.1",

@@ -1,14 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@solare/prettier-config': ^0.0.1
+  '@solare/prettier-config': 0.0.2
   gulp: ^4.0.2
   gulp-sass: ^5.1.0
   prettier: ^2.7.1
   sass: ^1.52.3
 
 devDependencies:
-  '@solare/prettier-config': 0.0.1
+  '@solare/prettier-config': 0.0.2
   gulp: 4.0.2
   gulp-sass: 5.1.0
   prettier: 2.7.1
@@ -16,8 +16,8 @@ devDependencies:
 
 packages:
 
-  /@solare/prettier-config/0.0.1:
-    resolution: {integrity: sha512-HIzPbkvJJo9d9aI9iKcjDiUyV+ntd0tz3RIxAy+xhiz9cCoHJl6HCt6mCILIUqZoHkts7rKxPX7fKCy5wavbQA==}
+  /@solare/prettier-config/0.0.2:
+    resolution: {integrity: sha512-h9J4bNLwwiiGg/qP+NC9Gs1Ssc3JYncTr0s+jXOv+N+jRCzzcWSodEtXYQCYpx7DaCrwKBqDvxnZubUtlg+Wlw==}
     dev: true
 
   /ansi-colors/1.1.0:
