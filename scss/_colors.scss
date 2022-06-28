@@ -1,0 +1,47 @@
+@use 'sass:color';
+
+// for each key
+@each $key, $val in $colors {
+  .text-#{$key} {
+    color: $val;
+  }
+  @for $i from 1 through 3 {
+    .text-#{$key}-l-#{$i} {
+      color: color.scale($val, $lightness: ($i * 10) * 1%);
+    }
+  }
+  @for $i from 1 through 3 {
+    .text-#{$key}-d-#{$i} {
+      color: color.scale($val, $lightness: ($i * 10) * -1%);
+    }
+  }
+  .bg-#{$key} {
+    background-color: $val;
+  }
+  @for $i from 1 through 3 {
+    .bg-#{$key}-l-#{$i} {
+      background-color: color.scale($val, $lightness: ($i * 10) * 1%);
+    }
+  }
+  @for $i from 1 through 3 {
+    .bg-#{$key}-d-#{$i} {
+      background-color: color.scale($val, $lightness: ($i * 10) * -1%);
+    }
+  }
+}
+
+.text-white {
+  color: $color-white;
+}
+
+.bg-white {
+  background-color: $color-white;
+}
+
+.text-black {
+  color: $color-black;
+}
+
+.bg-black {
+  background-color: $color-black;
+}
