@@ -1,31 +1,39 @@
 @use 'sass:color';
 
-// for each key
 @each $key, $val in $colors {
+  // .text-color
   .text-#{$key} {
     color: $val;
   }
-  @for $i from 1 through 3 {
-    .text-#{$key}-l-#{$i} {
-      color: color.scale($val, $lightness: ($i * 10) * 1%);
-    }
-  }
-  @for $i from 1 through 3 {
-    .text-#{$key}-d-#{$i} {
-      color: color.scale($val, $lightness: ($i * 10) * -1%);
-    }
-  }
+
+  // .bg-color
   .bg-#{$key} {
     background-color: $val;
   }
+
   @for $i from 1 through 3 {
-    .bg-#{$key}-l-#{$i} {
-      background-color: color.scale($val, $lightness: ($i * 10) * 1%);
+    $percent: $i * 10;
+    $dark: $percent * -1%;
+    $light: $percent * 1%;
+
+    // .text-color-light-n
+    .text-#{$key}-light-#{$i} {
+      color: color.scale($val, $lightness: $light);
     }
-  }
-  @for $i from 1 through 3 {
-    .bg-#{$key}-d-#{$i} {
-      background-color: color.scale($val, $lightness: ($i * 10) * -1%);
+
+    // .text-color-dark-n
+    .text-#{$key}-dark-#{$i} {
+      color: color.scale($val, $lightness: $dark);
+    }
+
+    // .bg-color-light-n
+    .bg-#{$key}-light-#{$i} {
+      background-color: color.scale($val, $lightness: $light);
+    }
+
+    // .bg-color-dark-n
+    .bg-#{$key}-dark-#{$i} {
+      background-color: color.scale($val, $lightness: $dark);
     }
   }
 }
